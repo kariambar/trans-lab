@@ -1,1 +1,16 @@
 /* YeyeYeee código aquí */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Quicksand', sans-serif; 
+}
+/* NAV */
+nav{
+	background-color: black;
+	height: 6rem;
+
+}
