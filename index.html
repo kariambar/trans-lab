@@ -22,24 +22,39 @@
 					<img src="docs/imagen.png" alt="logo" class="logoindex center-block">
 					<h1 class="titleindex">TRANS-LAB</h1>
 				</div>
-				<form class="formindex">
-					  <div class="group">
-					    <input type="text"><span class="highlight"></span>
-					    <label><i class="fa fa-user-o" aria-hidden="true"></i>Correo Electronico</label>
-					  </div>
-					  <div class="group">
-					    <input type="email"><span class="highlight"></span>
-					    <label><i class="fa fa-lock" aria-hidden="true"></i>Contraseña</label>
-					  </div>
-					  <a href="home.html"><button type="button" class="button buttonBlue">Iniciar Sesion
-					  </button></a>
-				</form>
+	<form id="formulario" action="" method="post">
+            <div class="row">
+                  <div class="input-field col s11">
+                    <input placeholder="Correo Electronico" id="input-email" type="text" value="">
+                    
+                    <div class="input-box"></div>
+                  </div>
+            </div>  
+              <div class="row">
+                    <div class="input-field col s11">
+                      <input type="email" placeholder="Contraseña" id="input-password" type="text" required>
+                      <div class="input-box"></div>
+                    </div>
+                    <div class="input-field col s11">  
+              <a class="btn waves-effect waves-light inicioses" type="submit" value="Next" href="home.html">INICIAR SESIÓN</a>
+              </div>
+            </form>  
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col s12">
 				<h6 class="passworp">¿Olvidaste tu contraseña?</h6>
-				<h5 class="sesion">¿NO TIENES CUENTA?<span class="iniciasesion">REGÍSRATE</span></h5>
+				<h5 class="sesion">¿NO TIENES CUENTA?<span class="iniciasesion">REGÍSTRATE</span></h5>
 			</div>
 		</div>
 	</div>
 </section>
-	
+	<!--Import jQuery before materialize.js-->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
