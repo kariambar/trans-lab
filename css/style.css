@@ -18,24 +18,25 @@ nav{
 /* ------INDEX ------*/
 .index{
 	background-color: #393d40;
-	height: 100vh;
+	height: 200vh;
 	width: 100%;
 }
 
-.img-inex{
+.logoindex{
 	margin-top: 5rem;
+	width: 30%;
 }
 
 .titleindex{
 	color: #f7b617;
-	font-size: 80px;
+	font-size: 40px;
 	font-weight: 900;
 	text-align: center;
 }
 
 
 .formindex {
-	width: 70%;
+	width: 90%;
 	margin: 4em auto;
 	padding: 3em 2em 2em 2em;
 	background: #fafafa;
@@ -173,7 +174,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 }
 
 .sesion{
-	margin-top: 5rem;
+	margin-top: 1rem;
 	color: white;
 	text-align: center;
 }
@@ -181,7 +182,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 .iniciasesion{
 	color:#f7b617;
 	font-weight: 900;
-	margin-left: 1rem;
+	margin-left: 10px;
 }
 
 /* ------HOME ------*/
