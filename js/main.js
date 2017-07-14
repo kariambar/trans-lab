@@ -11,23 +11,21 @@
 /*DROPDOWN*/
  $(document).ready(function() {
     $('select').material_select();
-  });
 
-//localstorage para iniciar sesion, pero NO funciono
-/*$(document).ready(function(){
-
+/*//localstorage para iniciar sesion, pero NO funciono
+$(document).ready(function(){
   //se llama botón
-  $(".inicioses").click(function(e){
+  $("#btnsesion").click(function(e){
     e.preventDefault();//cuando se pone prevent para que detenga el seguir el enlace, no se necesita return false en el if.
     //Se llama los value de los inputs
 
 
-    localStorage.email = $("#input-email").val();
-    var passw = $("#input-password").val();
+    localStorage.email = $("#email").val();
+    var passw = $("password").val();
 
     //donde se alojarán las validaciones
-    var errorNombre = $(".input-box")[0];
-    var errorCorreo = $(".input-box")[1];
+    var errorNombre = $(".input-box")
+    var errorCorreo = $(".input-box")
     //se crea otra variable para crear el texto directo
     var validarError = $(errorNombre).append('<p></p>');
     var validarCorreo = $(errorCorreo).append('<p></p>');
@@ -37,7 +35,7 @@
       if(localStorage.email == ""){
         $(validarError).text("Debes ingresar un correo valido");
         //$(errorNombre).first();
-      }else if(!/^([a-zA-Z])*$/.test(localStorage.email)){
+      }else if(!/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(localStorage.email)){
         $(validarError).text("Deben ser solo letras");
       }
       
@@ -45,19 +43,20 @@
     validacionEmail();
 
     //Validación contraseña
-    function validacionCorreo(){
+    function validacionContraseña(){
       if(passw == ""){
         $(validarCorreo).text("Debes ingresar solo 8 digitos");
-      }else if(!(/^[_a-z0-8-]+(.[_a-z0-8-]+)*@[a-z0-8-]+(.[a-z0-8-]+)*(.[a-z]{2,4})$/.test(passw))){
+      }else if(!(/^[0-9]+$/.test(passw))){
         $(validarCorreo).text("Deben ser solo numeros");
-      } 
+      }else{
+         window.location = "home.html";
     }
-    validacionCorreo();
+validacionContraseña();
+  };
+});
+  });*/
 
-  });
-});*/
-
-//esto tampoco funciona
+//INTENTE CON Esta FORMA Y TAMPOCO FUNCIONO
  $(document).ready(function() {
 function validateForm(){
   $("#btnsesion").click(function(e){
@@ -67,18 +66,23 @@ function validateForm(){
     //Validate Email
     function email(){
     var email = $("#email").val();
-    if(!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email))){
+    if(!(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(email))){
         alert("Por favor ingresa un correo electrónico válido");
     }
   }
     //Validate Password
     function password(){
     var password = $("#password").val();
-    if(!(/^\d{8}([0-9])*$/.test(password)) ){
-      alert("Por favor ingresa una contraseña de 8 dígitos")
-      }else{
-        $("#btnsesion").attr("href", "home-html");
+    if (!(/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/).test(emailValue)){
+            $("#espacio-error-nombre").append('<p class="red">Correo Invalido</p>');
+            $("#correo").val("");
+            console.log("first");
+            return false;
+        } else{
+        $("#btnsesion").attr("href", "home.html");
     };
   } 
 }
 });
+
+   });
