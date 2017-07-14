@@ -1,7 +1,10 @@
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+
 $(document).ready(function() {
-//Misión: Imprimir saldos en el html
     //aquí capturo el valor el input
-    $('.btnversaldo').click( function(){
+    $('.btnsaldo').click( function(){
     	$('.titulosaldo').hide('');
     	$('.montototal').hide('');
     	var inputTarjeta = $('#ingresotarjeta').val();
@@ -17,7 +20,7 @@ $(document).ready(function() {
 	    .done(function(saldo) {
 	    	console.log("success");
 	    	console.log(saldo);
-	    	$('.saldototal').append('<div class="titulosaldo"><h3>SALDO INICIAL</h3></div><div class="montototal"><p>'+ saldo.saldoTarjeta + '</p>');	
+	    	$('.saldototal').append('<div class="titulosaldo"><h5 class="saldotitle">SALDO INICIAL</h5></div><div class="montototal"><p">'+ saldo.saldoTarjeta + '</p>');	
 	    })
 	    .fail(function() {
 	    	console.log("error");
@@ -28,3 +31,5 @@ $(document).ready(function() {
 
     });      
 });
+
+// prueba con tarjeta : 76726308

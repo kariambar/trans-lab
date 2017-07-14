@@ -18,7 +18,7 @@ nav{
 /* ------INDEX ------*/
 .index{
 	background-color: #393d40;
-	height: 130vh;
+	height: 150vh;
 	width: 100%;
 }
 
@@ -83,7 +83,7 @@ nav{
 
 }
 i.material-icons.hambur{
-	font-size: 50px;
+	font-size: 40px;
 	margin-top: 10px;
 }
 .botonesHome{
@@ -173,11 +173,46 @@ height: 3rem;
 }
 /* ------SALDO ------*/
 .saldo{
+	background-image: url(../docs/transporte.jpg);
 	height: 100vh;
 	width: 100%;
-	background-color: gray;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 #ingresotarjeta{
 	margin-top: 10rem;
+	background-color: white;
+	padding-left: 1rem;
+}
+ .btnsaldo{
+ 	background-color: #f7b617;
+ }
+
+.input-field{
+	background-color: white;
+	padding-left: 1rem;
+}
+
+.titulosaldo{
+	background-color: black;
+	height: 3rem;
+	color: white
+}
+
+.saldotitle{
+	color: whitesmoke;
+	font-size: 14px;
+	margin-top: 1rem;
+}
+
+.montototal{
+	background-color: #f7b617;
+	height: 7rem;
+}
+p{
+	color: white;
+	margin-top: 20rem;
+	font-size: 40px;
 }
