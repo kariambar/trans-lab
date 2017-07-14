@@ -129,21 +129,6 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 }
 
 
-/* active */
-
-input:focus ~ .highlight {
-	animation: inputHighlighter 0.3s ease;
-}
-
-
-/* Animations */
-
-@keyframes inputHighlighter {
-	from { background: #4a89dc; }
-	to 	{ width: 0; background: transparent; }
-}
-
-
 /* Button */
 
 .button {
@@ -199,22 +184,21 @@ input:focus ~ .highlight {
 	margin-left: 1rem;
 }
 
-
-
-
-
-
 /* ------HOME ------*/
 /* clas="center-block" para imagenes*/
 .first{
-	background-color: #dcdddf;
+	background-image: url(../docs/transporte.jpg);
 	height: 100vh;
 	width: 100%;
-	margin: 0;
-	top:0;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
 }
 i.material-icons.hambur{
-	font-size: 40px;
+	font-size: 50px;
+	margin-top: 10px;
+	margin-left: 2rem;
 }
 .botonesHome{
 	width: 100%;
@@ -227,10 +211,6 @@ i.fa.iconsmenu{
 	font-size: 25px;
 }
 
-#slide-out{
-	padding-top: 3rem;
-	width: 100%;
-}
 .btn-home{
 	background-color: #f7b617;
 	width: 50rem;
@@ -244,4 +224,24 @@ a.waves-effect{
 	font-weight: 400;
 	padding-top: 1rem;
 }
-/* ------Fin Home ------*/
+.brand-logo{
+	margin-top: 1rem;
+}
+/* ------PREGUNTAS FRECUENTES ------*/
+.preguntas{
+	display: flex;
+	height: 50vh;
+	background-color: #f7b617;
+	width: 100%;
+}
+.preguntatitle{
+	text-align: center;
+	color: white;
+	font-size: 70px;
+	font-weight: 900;
+	padding-top: 10vh;
+	margin-left: 20rem;
+}
+.collapsible-body{
+	background-color: white;
+}
