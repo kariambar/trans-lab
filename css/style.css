@@ -18,13 +18,13 @@ nav{
 /* ------INDEX ------*/
 .index{
 	background-color: #393d40;
-	height: 200vh;
+	height: 100vh;
 	width: 100%;
 }
 
 .logoindex{
 	margin-top: 5rem;
-	width: 30%;
+	width: 20%;
 }
 
 .titleindex{
@@ -36,8 +36,8 @@ nav{
 
 
 #formulario {
-	width: 80%;
-	height: 40vh;
+	width: 90%;
+	height: 45vh;
 	margin: 4em auto;
 	padding: 3em 2em 2em 2em;
 	background-color: #fafafa;
@@ -57,7 +57,7 @@ nav{
 .passworp{
 	color: white;
 	text-align: center;
-	margin-top: 10rem;
+	margin-top: 15rem;
 }
 
 .sesion{
@@ -132,7 +132,7 @@ a.waves-effect{
 }
 /* ------PERFIL ------*/
 .perfil{
-	background-color: #393d40;
+	background-color: whitesmoke;
 	height: 100vh;
 	width: 100%;
 
@@ -147,4 +147,38 @@ height: 15rem;
 	height: 40vh;
 	background-color: #f7b617;
 	width: 100%;
+}
+
+.datosperfil{
+	width: 80%;
+	margin-left: 4rem;
+}
+#number-card{
+		width: 80%;
+	margin-left: 4rem;
+}
+#btnagregar{
+	background-color: #f7b617;
+	margin-left: 5rem;
+}
+
+.tarjetasnuevas{
+background-color:#e2e1e1;
+height: 3rem;
+
+}
+.numerosingre{
+	color: black;
+	margin-top: 0.5rem;
+	font-size: 20px;
+}
+/* ------SALDO ------*/
+.saldo{
+	height: 100vh;
+	width: 100%;
+	background-color: gray;
+}
+
+#ingresotarjeta{
+	margin-top: 10rem;
 }

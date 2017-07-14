@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home</title>
+  <title>Calcular</title>
   <!-- Fonts Quicksand -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,16 +34,62 @@
             <li><a href="home.html"><i class="fa fa-long-arrow-right iconsmenu" aria-hidden="true"></i>Home</a></li>
           </ul>
     </nav> 
-        <div class="botonesHome">
-            <ul>
-                <li><a href="saldo.html" class="waves-effect waves-light btn-large btn-home">VER SALDO</a></li>
-                <li><a href="calcular.html" class="waves-effect waves-light btn-large btn-home">CALCULAR TARIFA</a></li>
-                <li><a href="perfil.html" class="waves-effect waves-light btn-large btn-home">PERFIL</a></li>
-                <li><a href="pregunta.html" class="waves-effect waves-light btn-large btn-home">PREGUNTAS FRECUENTES</a></li>
-                </ul>  
-        </div> 
-</section> 
-<!--Import jQuery before materialize.js-->
+  <div class="container boxsaldo">
+      <div class="row">
+        <div class=" col s12 ">
+          <input type="number" name="numero tarjeta" placeholder="Ingresa tu número de tarjeta">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <label for="textari" class="labeltarjeta">Tarifa</label>
+          <select class="optarifa">
+            <option value="" disabled selected>Tarifa-Horario</option>
+            <option value="">Horario Alto: $740</option>
+            <option value="">Horario Medio: $680</option>
+            <option value="">Horario Bajo: $640</option>
+          </select>
+        </div>
+        <div class="input-field col s6">
+          <label for="textar" class="labeltarjeta">Tarjeta</label>
+          <select class="optarjeta">
+            <option value="" disabled selected>Tu Tarjeta</option>
+            <option value="">Tarjeta 1</option>
+            <option value="">Tarjeta 2</option>
+            <option value="">Tarjeta 3</option>
+          </select>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col s12 center">
+          <a class="waves-effect waves-light btn boton btncalcular">CALCULAR</a>
+        </div>
+      </div>
+      <!-- div a crear en js -->
+      <div class="row">
+        <div class="col s12 center saldototal">
+          <div class="titulosaldo">
+            <h3>COSTO PASAJE</h3>
+          </div>
+          <div class="montototal">
+            <p>$1.480</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 center saldototal">
+          <div class="titulosaldo">
+            <h3>SALDO FINAL</h3>
+          </div>
+          <div class="montototal">
+            <p>$1.480</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!--Import jQuery before materialize.js-->
     <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

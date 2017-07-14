@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Saldo</title>
   <!-- Fonts Quicksand -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
@@ -14,16 +14,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<section class="first">
+<section class="saldo">
 <!--NAV-->
     <nav>
         <div class="nav-wrapper nav-mobile">
-            <a href="#" class="brand-logo">TRANS-LAB</a>
+            <a href="home.html" class="brand-logo">TRANS-LAB</a>
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons hambur">menu</i></a>
         </div>         
 <!--SECTION MENU DESPLEGABLE-->
         <ul id="slide-out" class="side-nav">
-            <li><a  href="saldo.html" id="inicio"><i class="iconsmenu fa fa-usd" aria-hidden="true"></i>Ver Saldo</a></li>
+            <li><a href="saldo.html" id="inicio"><i class="iconsmenu fa fa-usd" aria-hidden="true"></i>Ver Saldo</a></li>
             <div class="divider"></div>
             <li><a class="rosado" href="calcular.html"><i class="iconsmenu fa fa-th" aria-hidden="true"></i>Calcular Tarifa</a></li>
             <div class="divider"></div>
@@ -34,3 +34,49 @@
             <li><a href="home.html"><i class="fa fa-long-arrow-right iconsmenu" aria-hidden="true"></i>Home</a></li>
           </ul>
     </nav> 
+    <div class="container boxsaldo">
+            <div class="row">
+                <div class=" col s12 ">
+                    <input type="number" name="numero tarjeta" placeholder="Ingresa tu número de tarjeta" id="ingresotarjeta">
+                </div>
+            </div>
+            <div class="row">
+                  <div class="input-field col s12 center">
+                    <select>
+                      <option value="" disabled selected>Escoge una tarjeta</option>
+                      <option value="1">Tarjeta 1</option>
+                      <option value="2">Tarjeta 2</option>
+                      <option value="3">Tarjeta 3</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center">
+                    <a class="waves-effect waves-light btn boton btnversaldo">VER SALDO</a>
+                </div>
+            </div>
+            <!-- div a crear en js -->
+            <div class="row">
+                <div class="col s12 center saldototal">
+<!--                    <div class="titulosaldo">
+                        <h3>SALDO INICIAL</h3>
+                    </div>
+                    <div class="montototal">
+                        <p>$1.480</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Import jQuery before materialize.js-->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <!--  JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/saldo.js"></script>
+  </body>
+  </html>

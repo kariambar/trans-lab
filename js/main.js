@@ -9,19 +9,8 @@
     }
   );
 
-/*Ir al Home*/
-$("#inicio").click(function(){
-		//este es el nuevo redireccionamiento
-		$(this).attr("href","index.html");
-});
-/*Ir a ver perfil*/
-$("#perfil").click(function(){
-		//este es el nuevo redireccionamiento
-		$(this).attr("href","index-perfil.html");
-});
-
-
-$(document).ready(function(){
+//localstorage para iniciar sesion, pero NO funciono
+/*$(document).ready(function(){
 
   //se llama botón
   $(".inicioses").click(function(e){
@@ -62,25 +51,30 @@ $(document).ready(function(){
     validacionCorreo();
 
   });
-});
+});*/
 
-/*function validateForm(){
-  $(".inicioses").click(function(e){
-    e.preventDefault();
+//esto tampoco funciona
+ $(document).ready(function() {
+function validateForm(){
+  $("#btnsesion").click(function(e){
+      email();
+    password();
+  });
     //Validate Email
-    (function email(){
-      var email = $("#input-email").val();
-      if (!(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/).test(email)){
-        $(".email-container").append('<span>Correo inválido. Ingrese nuevamente.');
-      }
-    })();
-        //Validate Password
-    (function password(){
-      var password = $("#input-password").val();
-      if (password=="123456" || password=="098765" || password=="password" || !(/^(?=.*\d).{6,}$/).test(password)){
-        $(".form-group").first().append('<span>Contraseña inválida. Ingrese nuevamente.');
-      }
-    })();
-
-      });
-} */
+    function email(){
+    var email = $("#email").val();
+    if(!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email))){
+        alert("Por favor ingresa un correo electrónico válido");
+    }
+  }
+    //Validate Password
+    function password(){
+    var password = $("#password").val();
+    if(!(/^\d{8}([0-9])*$/.test(password)) ){
+      alert("Por favor ingresa una contraseña de 8 dígitos")
+      }else{
+        $("#btnsesion").attr("href", "home-html");
+    };
+  } 
+}
+});

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Perfil</title>
   <!-- Fonts Quicksand -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
@@ -23,7 +23,7 @@
         </div>         
 <!--SECTION MENU DESPLEGABLE-->
         <ul id="slide-out" class="side-nav">
-            <li><a  href="saldo.html" id="inicio"><i class="iconsmenu fa fa-usd" aria-hidden="true"></i>Ver Saldo</a></li>
+            <li><a  href="saldo.html"><i class="iconsmenu fa fa-usd" aria-hidden="true"></i>Ver Saldo</a></li>
             <div class="divider"></div>
             <li><a class="rosado" href="calcular.html"><i class="iconsmenu fa fa-th" aria-hidden="true"></i>Calcular Tarifa</a></li>
             <div class="divider"></div>
@@ -34,13 +34,28 @@
             <li><a href="home.html"><i class="fa fa-long-arrow-right iconsmenu" aria-hidden="true"></i>Home</a></li>
           </ul>
     </nav>
-    <div class="col s12">
+    <div class="col s12 center">
         <div class="perfilsecond">
           <img src="docs/meme.jpg" alt="" class="perfilimg circle center-block">
         </div>
     </div>
-      </section>   
-    </body>
+    <div class="datosperfil s12 center">
+            <div class="input-field boxmail">
+              <input id="email" type="email" class="validate">
+              <label for="email" class="labelmail">Email</label>
+            </div>
+          </div>
+      <div class="row">
+      <div class="col s12 perfil-user">
+        <div class="input-group input-group-lg">
+            <input type="number" class="" placeholder="Número de tarjeta" aria-describedby="sizing-addon1" id="number-card">
+          </div>
+          <a class="waves-effect waves-light btn btnagregartarj" id="btnagregar">AGREGAR TARJETA</a>
+          
+      </div>
+    </div>
+  </section>
+</section>   
 <!--Import jQuery before materialize.js-->
     <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -49,5 +64,6 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/perfil.js"></script>
   </body>
   </html>

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Trans Lab</title>
   <!-- Fonts Quicksand -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
@@ -23,20 +23,16 @@
 					<h1 class="titleindex">TRANS-LAB</h1>
 				</div>
 	<form id="formulario" action="" method="post">
+        <div class="row">
+            <div class="input-field col s11">
+                    <input placeholder="Correo Electronico" id="email" type="text" value="">
+           	</div>  
             <div class="row">
-                  <div class="input-field col s11">
-                    <input placeholder="Correo Electronico" id="input-email" type="text" value="">
-                    
-                    <div class="input-box"></div>
-                  </div>
-            </div>  
-              <div class="row">
-                    <div class="input-field col s11">
-                      <input type="email" placeholder="Contraseña" id="input-password" type="text" required>
-                      <div class="input-box"></div>
+                <div class="input-field col s11">
+                    <input type="email" placeholder="Contraseña" id="password" type="text" required>
                     </div>
                     <div class="input-field col s11">  
-              <a class="btn waves-effect waves-light inicioses" type="submit" value="Next" href="home.html">INICIAR SESIÓN</a>
+              <a class="btn waves-effect waves-light inicioses" id="btnsesion" type="submit" value="Next" href="home.html">INICIAR SESIÓN</a>
               </div>
             </form>  
                 <div class="container-fluid">
