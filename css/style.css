@@ -18,7 +18,7 @@ nav{
 /* ------INDEX ------*/
 .index{
 	background-color: #393d40;
-	height: 100vh;
+	height: 130vh;
 	width: 100%;
 }
 
@@ -36,8 +36,8 @@ nav{
 
 
 #formulario {
+	height: 30rem;
 	width: 90%;
-	height: 45vh;
 	margin: 4em auto;
 	padding: 3em 2em 2em 2em;
 	background-color: #fafafa;
@@ -85,7 +85,6 @@ nav{
 i.material-icons.hambur{
 	font-size: 50px;
 	margin-top: 10px;
-	margin-left: 2rem;
 }
 .botonesHome{
 	width: 50%;
@@ -99,14 +98,14 @@ i.fa.iconsmenu{
 
 .btn-home{
 	background-color: #f7b617;
-	width: 180%;
+	width: 160%;
 	margin-top: 2vh;
-	height: 6rem;
-	margin-left: 2rem;
+	height: 4rem;
+	margin-left: 3rem;
 }
 a.waves-effect{
 	color: whitesmoke;
-	font-size: 25px;
+	font-size: 18px;
 	font-weight: 400;
 }
 .brand-logo{
