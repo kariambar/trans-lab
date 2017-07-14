@@ -12,7 +12,7 @@ $(document).ready(function() {
     	$('#ingresotarjeta').val('');
 	    	//aquí hago una llamada ajax
 	    $.ajax({
-	    	url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + inputTarjeta,
+	    	url: 'https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + inputTarjeta,
 	    	type: 'GET',
 	    	dataType: 'json',
 	    	data: {limit: '800'},
