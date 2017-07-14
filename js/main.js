@@ -8,6 +8,10 @@
       onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
     }
   );
+/*DROPDOWN*/
+ $(document).ready(function() {
+    $('select').material_select();
+  });
 
 //localstorage para iniciar sesion, pero NO funciono
 /*$(document).ready(function(){

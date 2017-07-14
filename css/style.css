@@ -216,3 +216,15 @@ p{
 	margin-top: 20rem;
 	font-size: 40px;
 }
+/* -----Calcular-SALDO ------*/
+
+#calculartarj{  
+	margin-top: 5rem;
+	background-color: white;
+	padding-left: 1rem;
+}	
+
+.calculofinal{
+	background-color: #f7b617;
+	margin-top: 4rem;
+}
